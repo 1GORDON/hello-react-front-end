@@ -8,7 +8,6 @@ const Greeting = () => {
   const Click = () => {
     dispatch(fetchmessage());
   };
-  console.log(message)
 
   return (
     <div>

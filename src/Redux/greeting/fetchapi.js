@@ -29,7 +29,6 @@ const initialState = {
 )
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         dispatch({ type: 'COMPLETE_MESSAGE', payload: data.msg });
       })
       .catch(() => dispatch({ type: 'FETCHING_MESSAGE' }));
