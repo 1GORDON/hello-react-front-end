@@ -1,8 +1,9 @@
+/* eslint-disable */
 const initialState = {
   message: {},
 };
 
-const messageReducer = (action, state = initialState) => {
+const messageReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'FETCHING_MESSAGE':
       return {
