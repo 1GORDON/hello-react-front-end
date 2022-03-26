@@ -21,9 +21,15 @@ const initialState = {
   };
   export const fetchmessage = () => async (dispatch) => {
     dispatch({ type: 'FETCHING_MESSAGE' });
-    await fetch('http://127.0.0.1:3000/api/greetings')
+    await fetch('http://127.0.0.1:3000/api/messages',  {
+      headers: {
+          'Content-Type': 'application/json'
+      },
+  }
+)
       .then((response) => response.json())
       .then((data) => {
+        // console.log(data);
         dispatch({ type: 'COMPLETE_MESSAGE', payload: data });
       })
       .catch(() => dispatch({ type: 'FETCHING_MESSAGE' }));

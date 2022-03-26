@@ -8,15 +8,16 @@ const Greeting = () => {
   const Click = () => {
     dispatch(fetchmessage());
   };
+  console.log(message)
 
   return (
     <div>
       <div>
-        Greeting:
+        Greetings:
         {' '}
         {message}
       </div>
-      <button type="button" onClick={Click}>Generate new Greeting</button>
+      <button type="button" onClick={Click}>Generate Greeting</button>
     </div>
   );
 };
