@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# hello-rails-back-end
+# hello-react-front-end
 
 # Description
 
@@ -11,6 +11,9 @@ This exercise is going to have you create a React front-end with a Rails back-en
 
 - ruby
 - rails
+- Javascript
+- React
+- Redux
 
 ## Getting Started
 
@@ -18,7 +21,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Copy Repo Link
 
-https://github.com/1GORDON/hello-rails-back-end.git
+https://github.com/1GORDON/hello-react-front-end.git
 ```
 - Get the directory that you want to clone the repository.
 
@@ -27,13 +30,13 @@ https://github.com/1GORDON/hello-rails-back-end.git
 - Copy clone of the Repo
 
 ```
-git clone https://github.com/1GORDON/hello-rails-back-end.git
+git clone https://github.com/1GORDON/hello-react-front-end.git
 ```
 
 - Go to the repository folder in your command prompt.
 
 ```
-cd hello-rails-back-end
+cd hello-react-front-end
 ```
 - Install bundles
 
@@ -41,16 +44,22 @@ cd hello-rails-back-end
 bundle install
 ```
 
-- rails s
+- npm start
 ```
 
 ### Prerequisites
 
 - ruby
-- Ruby on Rails
+- rails
+- Javascript
+- React
+- Redux
+
+
 ## Authors
 
-👤 **Tinyefuza (Godanah) Gordon** 
+👤 **Tinyefuza 
+(Godanah) Gordon** 
 
 - GitHub: [IGORDON](https://github.com/1GORDON)
 - Twitter: [@TinyefuzaG](https://twitter.com/GTinyefuza) 
