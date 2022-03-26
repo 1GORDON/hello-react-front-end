@@ -21,7 +21,7 @@ const initialState = {
   };
   export const fetchmessage = () => async (dispatch) => {
     dispatch({ type: 'FETCHING_MESSAGE' });
-    await fetch('http://127.0.0.1:3000/api/messages',  {
+    await fetch('https://hello-rails-back-end-123.herokuapp.com/api/messages',  {
       headers: {
           'Content-Type': 'application/json'
       },
