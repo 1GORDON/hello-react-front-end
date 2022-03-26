@@ -1,5 +1,5 @@
 const initialState = {
-    message: '',
+    message: {},
   };
   
   const messageReducer = (state = initialState, action) => {
@@ -13,7 +13,7 @@ const initialState = {
         return {
           ...state,
           loaded: false,
-          message: action.payload.message,
+          message: action.payload,
         };
       default:
         return state;
@@ -29,8 +29,8 @@ const initialState = {
 )
       .then((response) => response.json())
       .then((data) => {
-        // console.log(data);
-        dispatch({ type: 'COMPLETE_MESSAGE', payload: data });
+        console.log(data);
+        dispatch({ type: 'COMPLETE_MESSAGE', payload: data.msg });
       })
       .catch(() => dispatch({ type: 'FETCHING_MESSAGE' }));
   };

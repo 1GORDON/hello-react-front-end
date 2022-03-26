@@ -15,7 +15,7 @@ const Greeting = () => {
       <div>
         Greetings:
         {' '}
-        {message}
+        {message?.content}
       </div>
       <button type="button" onClick={Click}>Generate Greeting</button>
     </div>
